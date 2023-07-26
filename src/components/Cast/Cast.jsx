@@ -3,11 +3,11 @@ import { useParams } from 'react-router-dom';
 import Notiflix from 'notiflix';
 
 import { getMovieCredits } from 'services/fetchApi';
-import { List, Container, ListItem, Title } from './Cast.styled';
+import { Container, List, ListItem, Title } from './Cast.styled';
 
 const Cast = () => {
   const [casts, setCasts] = useState(null);
-  const { movieId } = useParams;
+  const { movieId } = useParams();
 
   useEffect(() => {
     getMovieCredits(movieId)
@@ -17,7 +17,8 @@ const Cast = () => {
       });
   }, [movieId]);
 
-  if (!casts) return null;
+  if (!casts)
+    return null;
 
   return (
     <Container>

@@ -3,7 +3,7 @@ import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import Loader from 'components/Loader';
 
 import Notiflix from 'notiflix';
-import { FaArrowLeftLong } from 'react-icons/fa';
+import { FaArrowLeft } from 'react-icons/fa';
 import { getMovieDetails } from 'services/fetchApi';
 
 import {
@@ -45,7 +45,7 @@ const MovieDetails = () => {
     <>
       <Wrapper>
         <LinkBackBtn to={backLinkHref.current}>
-          <FaArrowLeftLong size="20px" />
+          <FaArrowLeft size="20px" />
           Go back
         </LinkBackBtn>
         <MovieCard>

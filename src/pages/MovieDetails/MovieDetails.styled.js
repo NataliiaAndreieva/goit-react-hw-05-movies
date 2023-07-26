@@ -13,18 +13,14 @@ export const LinkBackBtn = styled(Link)`
   justify-content: center;
   color: black;
   font-size: 20px;
-  max-width: 70px;
+  max-width: 100px;
   text-decoration: none;
 
   padding: 8px 12px;
   cursor: pointer;
-  border-radius: 10px;
-  border: 1.5px solid black;
+  border-radius: 8px;
+  border: 2px solid black;
   margin-bottom: 20px;
-
-  :hover {
-    background-color: yellow;
-  }
 `;
 export const Title = styled.p`
   font-size: 20px;

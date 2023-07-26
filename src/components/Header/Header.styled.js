@@ -20,11 +20,11 @@ export const HeaderLink = styled(NavLink)`
   font-weight: 500;
   cursor: pointer;
 
-&:hover,
+  &:hover,
   &:focus {
-    color: red;
+    color: deeppink;
   }
   &.active {
-    color: red;
+    color: deeppink;
   }
 `;
